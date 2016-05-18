@@ -1,0 +1,37 @@
+{
+  "name": "poutine-web",
+  "version": "1.0.0",
+  "description": "tobima-web-admin-project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/thefuture2092/Poutine-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thefuture2092/Poutine-web/issues"
+  },
+  "homepage": "https://github.com/thefuture2092/Poutine-web#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2",
+    "redux-thunk": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.0",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-react-transform": "^2.0.2",
+    "chai": "^3.5.0",
+    "expect": "^1.20.1",
+    "webpack": "^1.13.0",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.10.0"
+  }
+}
