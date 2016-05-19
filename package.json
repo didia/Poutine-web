@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-register --recursive",
-    "test:watch": "npm test -- --watch"
+    "test:watch": "npm test -- --watch",
+    "build": "babel input.js -o compiled.js",
+    "build": "babel src -d lib"
   },
   "repository": {
     "type": "git",
@@ -31,6 +33,7 @@
     "redux-thunk": "^2.1.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.9.0",
     "babel-core": "^6.9.0",
     "babel-loader": "^6.2.4",
     "babel-plugin-react-transform": "^2.0.2",
