@@ -6,8 +6,9 @@
   "scripts": {
     "test": "mocha --compilers js:babel-register --recursive",
     "test:watch": "npm test -- --watch",
-    "build": "babel input.js -o compiled.js",
-    "build": "babel src -d lib"
+    "build": "babel src -d lib",
+    "server": "node server/server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/thefuture2092/Poutine-web#readme",
   "dependencies": {
+    "babel": "^6.5.2",
     "babel-register": "^6.9.0",
     "body-parser": "^1.15.1",
     "cookie-parser": "^1.4.1",
@@ -45,13 +47,14 @@
     "chai": "^3.5.0",
     "cross-env": "^1.0.7",
     "expect": "^1.20.1",
+    "istanbul": "^0.4.3",
     "jsdom": "^9.1.0",
     "nock": "^8.0.0",
     "node-libs-browser": "^1.0.0",
     "react-addons-test-utils": "^15.0.2",
     "redux-devtools": "^3.3.1",
     "redux-logger": "^2.6.1",
-    "redux-mock-store": "^1.0.2",
+    "redux-mock-store": "^1.1.0",
     "thunk": "0.0.1",
     "webpack": "^1.13.0",
     "webpack-dev-middleware": "^1.6.1",
