@@ -5,10 +5,10 @@ import { Provider } from 'react-redux'
 import App from './src/containers/App'
 //import thunkMiddleware from 'redux-thunk'
 //import api from './middleware/api'
-import authentication from './src/reducers/authentication'
+import appReducer from './src/reducers/index'
 
 //let createStoreWithMiddleware = applyMiddleware(thunkMiddleware, api)(createStore)
-let store = createStore(authentication)
+let store = createStore(appReducer)
 let rootElement = document.getElementById('root')
 
 ReactDOM.render(

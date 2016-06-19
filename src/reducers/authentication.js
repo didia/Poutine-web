@@ -3,7 +3,7 @@
  */
 import * as authenticationActions from '../actions/authenticationActionsTypes.js'
 
-export function authentication(state = {
+export default function authentication(state = {
     isFetching: false,
     isAuthenticated: localStorage.getItem('id_token') ? true : false }, action = null) {
 
