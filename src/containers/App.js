@@ -24,7 +24,7 @@ App.propTypes = {
     isAuthenticated: React.PropTypes.bool.isRequired,
     errorMessage   : React.PropTypes.string,
     dispatch       : React.PropTypes.func.isRequired
-    }
+}
 
 function mapStateToProps(state) {
     const { authentication }                = state
